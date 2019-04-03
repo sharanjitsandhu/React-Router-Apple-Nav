@@ -1,28 +1,12 @@
 .App {
   text-align: center;
-}
-
-/* .navbar { @media only screen and (max-width: 1044px) 
-  min-width: 320px;
-} */
-
-.App-header {
-  /* min-height: 100vh; */
-  display: flex;
-  justify-content: center;
-  color: white;
-  cursor: default;
-  min-width: 320px;
-  max-height: 44px;
-  height: 48px;
-  background: rgba(45, 45, 45, 0.98);
+  height: 100%;
   width: 100%;
-  position: absolute;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
-  height: 70px;
   align-items: center;
   color: white;
   cursor: default;
@@ -33,22 +17,112 @@
   width: 100%;
   position: absolute;
 }
-.main-nav {
+
+.nav {
   display: flex;
-  justify-content: space-between;
-  font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: 0;
+  justify-content: center;
+  outline: none;
+  align-items: center;
+  color: white;
+  min-width: 32px;
+  max-height: 44px;
+  height: 48px;
+  background: rgba(45, 45, 45, 0.98);
+  width: 100%;
+  position: absolute;
 }
-.main-nav-li {
+
+.nav-links {
   margin: 0;
-  margin-left: 40px;
   cursor: pointer;
-  /* border: 1px solid red; */
+  margin-left: 40px;
+  font-size: 17px;
+  display: flex;
+  /* justify-content: space-between; */
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: gray;
+  font-size: 17px;
+}
+
+.nav-links a:last-of-type {
+  margin-right: 0;
+}
+.nav-links a.active {
+  color: gray;
+}
+
+.subnav {
+  display: flex;
+  justify-content: center;
+  background: lightgray;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 12px;
+  border: 1px solid white;
+}
+.product-wrapper {
+  justify-items: center;
+}
+
+.product-names {
+  padding: 0 40px;
+  font-size: 11px;
+  padding-bottom: 10px;
+  line-height: 1.09091;
+  font-weight: 400;
+  letter-spacing: -0.008em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.product-names:hover {
+  color: #0070c9;
+  cursor: pointer;
+}
+
+.product-images {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.apple-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.apple-icon:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.search-icon {
+  color: white;
+  margin-left: 40px;
+  font-size: 18px;
+}
+.search-icon:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.shopping-bag-icon {
+  color: white;
+  font-size: 18px;
+  margin-left: 40px;
+}
+.shopping-bag-icon:hover {
+  color: gray;
+  cursor: pointer;
 }

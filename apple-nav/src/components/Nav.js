@@ -19,11 +19,16 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        {this.state.nav.map(i => (
-          <div key={i.id}>
-            <NavLink to={`/${i.name}`}>{i.name}</NavLink>
-          </div>
-        ))}
+        <div className="nav">
+          <i className="fab fa-apple apple-icon" />
+          {this.state.nav.map(i => (
+            <div key={i.id} className="nav-links">
+              <NavLink to={`/${i.name}`}>{i.name}</NavLink>
+            </div>
+          ))}
+          <i className="fa fa-search search-icon" />
+          <i className="fas fa-shopping-bag shopping-bag-icon" />
+        </div>
         <Route
           exact
           path="/:name"
